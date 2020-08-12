@@ -1,0 +1,23 @@
+<!-- templates/home.html -->
+
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container masthead">
+        <h1 itemprop="name" content="This is my blog">
+        <a href="/" class="logo">
+            This <span>is</span> the <span>KSA</span>
+        </a>
+        </h1>
+        <h5>knowledge, skills, abilities</h5>
+    </div>
+
+    <div> 
+        <h2>collegs</h2>
+    </div>
+
+
+    {% block subscribe %}
+    {% endblock subscribe %}
+
+{% endblock content %}

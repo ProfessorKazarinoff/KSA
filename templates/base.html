@@ -1,0 +1,29 @@
+<!-- templates/base.html -->
+
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+    {% block head %}
+        {% include "head.html" %}
+    {% endblock head %}
+    <body>
+        {% block nav %}
+            {% include "nav.html" %}
+        {% endblock nav %}
+        <main role="main" class="container">
+            <div>
+            {% block content %}
+            {% endblock content %}
+            </div>
+        </main>
+
+        {% block footer %}
+            {% include "footer.html" %}
+        {% endblock footer %}
+
+        {% block javascripts %}
+            {% include "javascripts.html" %}
+        {% endblock javascripts %}
+    </body>
+</html>

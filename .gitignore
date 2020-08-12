@@ -139,3 +139,6 @@ dmypy.json
 # Virtual Environments
 
 venv/
+
+# /home/peter/Documents/ksa/db.sqlite3
+db.sqlite3
